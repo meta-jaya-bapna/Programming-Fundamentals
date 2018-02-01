@@ -17,7 +17,6 @@ public class BinaryToOctal {
 	 */
 	int convertBinaryToOctal(long binary)
 	{
-		System.out.println("binary-input : "+binary);
 		int decimal=0,octal=0;                                  //to store the decimal number and octal number
 		int iterator=0; 										//Iterator for loops
 		while(binary!=0)
@@ -26,7 +25,6 @@ public class BinaryToOctal {
 			iterator++;
 			binary=binary/10;
 		}
-		System.out.println("decimal-output : "+decimal);
 		iterator=1;
 		while(decimal!=0)
 		{
@@ -34,7 +32,6 @@ public class BinaryToOctal {
 				decimal=decimal/8;
 				iterator*=10;
 		}
-		System.out.println("octal-output : "+octal);
 		return octal;											//returns final octal number
 	}
 }
